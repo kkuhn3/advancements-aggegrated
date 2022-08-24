@@ -1,0 +1,149 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<script src="style.js"></script>
+		<script src="selectors.js"></script>
+		<script src="agg.js"></script>
+	</head>
+	<body>
+		<div id="selectors">
+			<label for="worldSel">&nbsp;&nbsp;&nbsp;World:&nbsp;</label>
+			<select id="worldSel" onchange="worldUpdate(this.value)">
+			</select>
+			<label for="playerSel">&nbsp;Player:&nbsp;</label>
+			<select id="playerSel" onchange="playerUpdate(this.value)">
+				<option value="all">All</option>
+			</select>
+			<label for="tabSel">&nbsp;Category:&nbsp;</label>
+			<select id="tabSel" onchange="tabUpdate(this.value)">
+				<option selected value="minecraft" >Minecraft</option>
+				<option value="nether">Nether</option>
+				<option value="end">The End</option>
+				<option value="adventure">Adventure</option>
+				<option value="husbandry">Husbandry</option>
+			</select>
+		</div>
+		<div class="category" id="minecraft">
+			<div class="node" id="story/root"></div>
+			<div class="node" id="story/mine_stone"></div>
+			<div class="node" id="story/upgrade_tools"></div>
+			<div class="node" id="story/smelt_iron"></div>
+			<div class="node" id="story/obtain_armor"></div>
+			<div class="node" id="story/lava_bucket"></div>
+			<div class="node" id="story/iron_tools"></div>
+			<div class="node" id="story/deflect_arrow"></div>
+			<div class="node" id="story/form_obsidian"></div>
+			<div class="node" id="story/mine_diamond"></div>
+			<div class="node" id="story/enter_the_nether"></div>
+			<div class="node" id="story/shiny_gear"></div>
+			<div class="node" id="story/enchant_item"></div>
+			<div class="node" id="story/cure_zombie_villager"></div>
+			<div class="node" id="story/follow_ender_eye"></div>
+			<div class="node" id="story/enter_the_end"></div>
+		</div>
+		<div class="category" id="nether">
+			<div class="node" id="nether/root"></div>
+			<div class="node" id="nether/return_to_sender"></div>
+			<div class="node" id="nether/find_bastion"></div>
+			<div class="node" id="nether/obtain_ancient_debris"></div>
+			<div class="node" id="nether/fast_travel"></div>
+			<div class="node" id="nether/find_fortress"></div>
+			<div class="node" id="nether/obtain_crying_obsidian"></div>
+			<div class="node" id="nether/distract_piglin"></div>
+			<div class="node" id="nether/ride_strider"></div>
+			<div class="node" id="nether/uneasy_alliance"></div>
+			<div class="node" id="nether/loot_bastion"></div>
+			<div class="node" id="nether/use_lodestone"></div>
+			<div class="node" id="nether/netherite_armor"></div>
+			<div class="node" id="nether/get_wither_skull"></div>
+			<div class="node" id="nether/obtain_blaze_rod"></div>
+			<div class="node" id="nether/charge_respawn_anchor"></div>
+			<div class="node" id="nether/ride_strider_in_overworld_lava"></div>
+			<div class="node" id="nether/explore_nether"></div>
+			<div class="node" id="nether/summon_wither"></div>
+			<div class="node" id="nether/brew_potion"></div>
+			<div class="node" id="nether/create_beacon"></div>
+			<div class="node" id="nether/all_potions"></div>
+			<div class="node" id="nether/create_full_beacon"></div>
+			<div class="node" id="nether/all_effects"></div>
+		</div>
+		<div class="category" id="end">
+			<div class="node" id="end/root"></div>
+			<div class="node" id="end/kill_dragon"></div>
+			<div class="node" id="end/dragon_egg"></div>
+			<div class="node" id="end/enter_end_gateway"></div>
+			<div class="node" id="end/respawn_dragon"></div>
+			<div class="node" id="end/dragon_breath"></div>
+			<div class="node" id="end/find_end_city"></div>
+			<div class="node" id="end/elytra"></div>
+			<div class="node" id="end/levitate"></div>
+		</div>
+		<div class="category" id="adventure">
+			<div class="node" id="adventure/root"></div>
+			<div class="node" id="adventure/voluntary_exile"></div>
+			<div class="node" id="adventure/spyglass_at_parrot"></div>
+			<div class="node" id="adventure/kill_a_mob"></div>
+			<div class="node" id="adventure/trade"></div>
+			<div class="node" id="adventure/honey_block_slide"></div>
+			<div class="node" id="adventure/ol_betsy"></div>
+			<div class="node" id="adventure/lightning_rod_with_villager_no_fire"></div>
+			<div class="node" id="adventure/fall_from_world_height"></div>
+			<div class="node" id="adventure/avoid_vibration"></div>
+			<div class="node" id="adventure/sleep_in_bed"></div>
+			<div class="node" id="adventure/hero_of_the_village"></div>
+			<div class="node" id="adventure/spyglass_at_ghast"></div>
+			<div class="node" id="adventure/throw_trident"></div>
+			<div class="node" id="adventure/kill_mob_near_sculk_catalyst"></div>
+			<div class="node" id="adventure/shoot_arrow"></div>
+			<div class="node" id="adventure/kill_all_mobs"></div>
+			<div class="node" id="adventure/totem_of_undying"></div>
+			<div class="node" id="adventure/summon_iron_golem"></div>
+			<div class="node" id="adventure/trade_at_world_height"></div>
+			<div class="node" id="adventure/two_birds_one_arrow"></div>
+			<div class="node" id="adventure/whos_the_pillager_now"></div>
+			<div class="node" id="adventure/arbalistic"></div>
+			<div class="node" id="adventure/adventuring_time"></div>
+			<div class="node" id="adventure/play_jukebox_in_meadows"></div>
+			<div class="node" id="adventure/walk_on_powder_snow_with_leather_boots"></div>
+			<div class="node" id="adventure/spyglass_at_dragon"></div>
+			<div class="node" id="adventure/very_very_frightening"></div>
+			<div class="node" id="adventure/sniper_duel"></div>
+			<div class="node" id="adventure/bullseye"></div>
+		</div>
+		<div class="category" id="husbandry">
+			<div class="node" id="husbandry/root"></div>
+			<div class="node" id="husbandry/safely_harvest_honey"></div>
+			<div class="node" id="husbandry/breed_an_animal"></div>
+			<div class="node" id="husbandry/allay_deliver_item_to_player"></div>
+			<div class="node" id="husbandry/ride_a_boat_with_a_goat"></div>
+			<div class="node" id="husbandry/tame_an_animal"></div>
+			<div class="node" id="husbandry/make_a_sign_glow"></div>
+			<div class="node" id="husbandry/fishy_business"></div>
+			<div class="node" id="husbandry/silk_touch_nest"></div>
+			<div class="node" id="husbandry/tadpole_in_a_bucket"></div>
+			<div class="node" id="husbandry/plant_seed"></div>
+			<div class="node" id="husbandry/wax_on"></div>
+			<div class="node" id="husbandry/bred_all_animals"></div>
+			<div class="node" id="husbandry/allay_deliver_cake_to_note_block"></div>
+			<div class="node" id="husbandry/complete_catalogue"></div>
+			<div class="node" id="husbandry/tactical_fishing"></div>
+			<div class="node" id="husbandry/leash_all_frog_variants"></div>
+			<div class="node" id="husbandry/balanced_diet"></div>
+			<div class="node" id="husbandry/obtain_netherite_hoe"></div>
+			<div class="node" id="husbandry/wax_off"></div>
+			<div class="node" id="husbandry/axolotl_in_a_bucket"></div>
+			<div class="node" id="husbandry/froglights"></div>
+			<div class="node" id="husbandry/kill_axolotl_target"></div>
+		</div>
+	</body>
+	<script>
+		(async() => {
+			await loadContent();
+			await loadUserIdToName();
+			setScaleSize();
+			addResizer();
+			worldUpdate(worldSel.value);
+			tabUpdate("minecraft");
+		})();
+	</script>
+</html>
