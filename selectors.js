@@ -43,9 +43,11 @@ function updateNodes(worldName, userId) {
 			let doneCount = 0;
 			let totalCount = 0;
 			for(const requirement in data[worldName][userId][node.id]) {
-				totalCount++;
-				if(data[worldName][userId][node.id][requirement] === 1) {
-					doneCount++;
+				if(userIdToName[requirement]) {
+					totalCount++;
+					if(data[worldName][userId][node.id][requirement] === 1) {
+						doneCount++;
+					}
 				}
 			}
 			if(totalCount === doneCount) {
@@ -58,11 +60,31 @@ function updateNodes(worldName, userId) {
 				node.style.backgroundColor = "red";
 			}
 		}
+		
+		let info = document.getElementById("info:"+node.id);
+		const advancement = advancements[node.id];
+		info.innerHTML = 
+			"<span><b>" + advancement.name + "<b></span><br>" +
+			"<span><I>" + advancement.description + "<I></span><br>" +
+			"<br>";
+		for(const requirement in data[worldName][userId][node.id]) {
+			let color = "red";
+			if(data[worldName][userId][node.id][requirement] === 1) {
+				color = "green";
+			}
+			else if(data[worldName][userId][node.id][requirement] > 0) {
+				color = "yellow";
+			}
+			if(userId === "all") {
+				if(userIdToName[requirement]) {
+					info.innerHTML = info.innerHTML + '<span style="color: ' + color + ';">&nbsp;-&nbsp;' + userIdToName[requirement] + "<span><br>";
+				}
+			}
+			else if(requirement !== "done") {
+				info.innerHTML = info.innerHTML + '<span style="color: ' + color + ';">&nbsp;-&nbsp;' + requirement + "<span><br>";
+			}
+		}
 	}
-}
-
-function setNodeBackground(node, color) {
-	node.style.background = "url('images/"+node.id+"'), "+color+";";
 }
 
 function playerUpdate(userId) {

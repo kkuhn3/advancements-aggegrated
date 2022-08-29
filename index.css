@@ -40,7 +40,7 @@ select {
 	bottom: 0; 
 	left: 0; 
 	right: 0;
-	overflow-y: scroll;
+	overflow-y: auto;
 }
 
 #minecraft {
@@ -73,4 +73,12 @@ img {
 	height: 80%;
 	margin-top: 10%;
 	margin-left: 10%;
+}
+
+.info {
+	position: absolute;
+	background-color: #333333;
+	color: #cccccc;
+	overflow-y: auto;
+	padding: 8px;
 }

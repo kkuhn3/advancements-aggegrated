@@ -140,11 +140,15 @@
 		(async() => {
 			await loadContent();
 			await loadUserIdToName();
+			await loadAdvancementNames();
 			setScaleSize();
 			addResizer();
+			addInfoDivs();
 			worldUpdate(worldSel.value);
 			tabUpdate("minecraft");
 			addImages();
+			setScaleSize();
+			positionInfo();
 		})();
 	</script>
 </html>

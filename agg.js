@@ -1,8 +1,9 @@
 let data = {};
 let userIdToName = {};
+let advancements = {};
 
 async function loadContent() {
-	const allAdvancementsRes = await fetch('./static/1_19_2.json', {
+	const allAdvancementsRes = await fetch('./static/criteria.json', {
 		method: 'GET'
 	});
 	const allAdvancements = await allAdvancementsRes.json();
@@ -82,4 +83,11 @@ async function loadUserIdToName() {
 		userIdToName[json[i].uuid] = json[i].name;
 	}
 	userIdToName["all"] = "All";
+}
+
+async function loadAdvancementNames() {
+	const res = await fetch('./static/advancements.json', {
+		method: 'GET'
+	});
+	advancements = await res.json();
 }

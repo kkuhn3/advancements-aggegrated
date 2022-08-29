@@ -1,11 +1,12 @@
 let size = 0;
+let fullWidth = 0;
 
 function setScaleSize() {
-	const activeDiv = document.getElementById(tabSel.value);
+	fullWidth = document.getElementById(tabSel.value).clientWidth;
 	// the biggest advancement horizontally has 9 elements. with 1 between and .5 margins
-	const maxwidth = activeDiv.clientWidth / 18;
-	document.documentElement.style.setProperty('--size', maxwidth);
-	size = maxwidth;
+	const maxNodewidth = fullWidth / 18;
+	document.documentElement.style.setProperty('--size', maxNodewidth);
+	size = maxNodewidth;
 	placeMinecraft();
 	placeNether();
 	placeEnd();
@@ -16,6 +17,7 @@ function setScaleSize() {
 function addResizer() {
 	window.addEventListener('resize', function(event){
 		setScaleSize();
+		positionInfo();
 	});
 }
 
@@ -146,5 +148,40 @@ function addImages() {
 	const nodes = document.getElementsByClassName("node");
 	for(node of nodes) {
 		node.innerHTML = '<img src="./images/' + node.id + '.png">';
+	}
+}
+
+function addInfoDivs() {
+	const nodes = document.getElementsByClassName("node");
+	for(node of nodes) {
+		let info = document.createElement('div');
+		info.className = "info";
+		info.id = "info:" + node.id;
+		sizeInfo(info, node);
+		info.style.display = "none";
+		node.parentElement.appendChild(info);
+		node.onmouseover = () => {info.style.display = "block";};
+		node.onmouseout = () => {info.style.display = "none";};
+		info.onmouseover = () => {info.style.display = "block";};
+		info.onmouseout = () => {info.style.display = "none";};
+	}
+}
+
+function positionInfo() {
+	const infos = document.getElementsByClassName("info");
+	for(info of infos) {
+		const node = document.getElementById(info.id.split(":")[1]);
+		sizeInfo(info, node);
+	}
+}
+
+function sizeInfo(info, node) {
+	info.style.top = node.style.top;
+	const nodeLeft = parseInt(node.style.left);
+	if(nodeLeft > fullWidth / 2) {
+		info.style.right = fullWidth - nodeLeft - 2;
+	}
+	else {
+		info.style.left = nodeLeft + size + 6;
 	}
 }
