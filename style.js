@@ -1,24 +1,11 @@
-//let minecraftDiv = document.getElementById("minecraft");
-//minecraftDiv.addEventListener("wheel", (evt) => {
-//	evt.preventDefault();
-//	minecraftDiv.scrollLeft += evt.deltaY;
-//});
 let size = 0;
 
 function setScaleSize() {
 	const activeDiv = document.getElementById(tabSel.value);
-	// the biggest advancement horizontally has 9 elements.
-	const maxwidth = activeDiv.clientWidth / 14;
-	// the biggest advancement vertically has 16 elements.
-	const maxheight = activeDiv.clientHeight / 24.5;
-	if(maxwidth > maxheight) {
-		document.documentElement.style.setProperty('--size', maxwidth);
-		size = maxwidth;
-	}
-	else {
-		document.documentElement.style.setProperty('--size', maxheight);
-		size = maxheight;
-	}
+	// the biggest advancement horizontally has 9 elements. with 1 between and .5 margins
+	const maxwidth = activeDiv.clientWidth / 18;
+	document.documentElement.style.setProperty('--size', maxwidth);
+	size = maxwidth;
 	placeMinecraft();
 	placeNether();
 	placeEnd();
@@ -151,6 +138,13 @@ function placeHusbandry() {
 
 function setTopLeft(eleId, t, l) {
 	const ele = document.getElementById(eleId);
-	ele.style.top = ((t-1) * 1.5) * size;
-	ele.style.left = ((l-1) * 1.5 + .5) * size;
+	ele.style.top = ((t-1) * 1.25) * size;
+	ele.style.left = ((l-1) * 2 + .5) * size;
+}
+
+function addImages() {
+	const nodes = document.getElementsByClassName("node");
+	for(node of nodes) {
+		node.innerHTML = '<img src="./images/' + node.id + '.png">';
+	}
 }
