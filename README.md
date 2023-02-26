@@ -10,11 +10,11 @@ Pulls Minecraft advancement data from a world or multiple worlds and loads it in
 
 ### Setting up static data
 
-* Softlink "newWorld" to a world to include
-mklink /D ./newWorld /path/to/world
-* Softlink "oldWorlds" to a folder of worlds to include
-mklink /D ./oldWorlds /path/to/worlds
-* Add "whitelist.json" from the server to ./static/whitelist.json
+Softlink "newWorld" to a world to include
+>mklink /D ./newWorld /path/to/world
+Softlink "oldWorlds" to a folder of worlds to include
+>mklink /D ./oldWorlds /path/to/worlds
+Add "whitelist.json" from the server to ./static/whitelist.json
 
 ### Executing program
 
