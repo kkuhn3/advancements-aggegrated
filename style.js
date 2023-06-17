@@ -80,17 +80,20 @@ function placeEnd() {
 }
 
 function placeAdventure() {
-	setTopLeft("adventure/root", 8.5, 1);
+	setTopLeft("adventure/root", 9, 1);
 	setTopLeft("adventure/voluntary_exile", 1, 2);
 	setTopLeft("adventure/spyglass_at_parrot", 2, 2);
 	setTopLeft("adventure/kill_a_mob", 5, 2);
+	setTopLeft("adventure/read_power_of_chiseled_bookshelf", 6.5, 2);
 	setTopLeft("adventure/trade", 8.5, 2);
-	setTopLeft("adventure/honey_block_slide", 9.75, 2);
-	setTopLeft("adventure/ol_betsy", 11, 2);
-	setTopLeft("adventure/lightning_rod_with_villager_no_fire", 12, 2);
-	setTopLeft("adventure/fall_from_world_height", 13, 2);
-	setTopLeft("adventure/avoid_vibration", 14, 2);
-	setTopLeft("adventure/sleep_in_bed", 15, 2);
+	setTopLeft("adventure/trim_with_any_armor_pattern", 10, 2);
+	setTopLeft("adventure/honey_block_slide", 11, 2);
+	setTopLeft("adventure/ol_betsy", 12, 2);
+	setTopLeft("adventure/lightning_rod_with_villager_no_fire", 13, 2);
+	setTopLeft("adventure/fall_from_world_height", 14, 2);
+	setTopLeft("adventure/salvage_sherd", 15, 2);
+	setTopLeft("adventure/avoid_vibration", 16, 2);
+	setTopLeft("adventure/sleep_in_bed", 17, 2);
 	setTopLeft("adventure/hero_of_the_village", 1, 3);
 	setTopLeft("adventure/spyglass_at_ghast", 2, 3);
 	setTopLeft("adventure/throw_trident", 3, 3);
@@ -100,12 +103,14 @@ function placeAdventure() {
 	setTopLeft("adventure/totem_of_undying", 7, 3);
 	setTopLeft("adventure/summon_iron_golem", 8, 3);
 	setTopLeft("adventure/trade_at_world_height", 9, 3);
-	setTopLeft("adventure/two_birds_one_arrow", 10, 3);
-	setTopLeft("adventure/whos_the_pillager_now", 11, 3);
-	setTopLeft("adventure/arbalistic", 12, 3);
-	setTopLeft("adventure/adventuring_time", 14, 3);
-	setTopLeft("adventure/play_jukebox_in_meadows", 15, 3);
-	setTopLeft("adventure/walk_on_powder_snow_with_leather_boots", 16, 3);
+	setTopLeft("adventure/trim_with_all_exclusive_armor_patterns", 10, 3);
+	setTopLeft("adventure/two_birds_one_arrow", 11, 3);
+	setTopLeft("adventure/whos_the_pillager_now", 12, 3);
+	setTopLeft("adventure/arbalistic", 13, 3);
+	setTopLeft("adventure/craft_decorated_pot_using_only_sherds", 15, 3);
+	setTopLeft("adventure/adventuring_time", 16, 3);
+	setTopLeft("adventure/play_jukebox_in_meadows", 17, 3);
+	setTopLeft("adventure/walk_on_powder_snow_with_leather_boots", 18, 3);
 	setTopLeft("adventure/spyglass_at_dragon", 2, 4);
 	setTopLeft("adventure/very_very_frightening", 3, 4);
 	setTopLeft("adventure/sniper_duel", 4.5, 4);
@@ -113,7 +118,7 @@ function placeAdventure() {
 }
 
 function placeHusbandry() {
-	setTopLeft("husbandry/root", 6, 1);
+	setTopLeft("husbandry/root", 6.5, 1);
 	setTopLeft("husbandry/safely_harvest_honey", 1, 2);
 	setTopLeft("husbandry/breed_an_animal", 2, 2);
 	setTopLeft("husbandry/allay_deliver_item_to_player", 3, 2);
@@ -123,18 +128,21 @@ function placeHusbandry() {
 	setTopLeft("husbandry/fishy_business", 7, 2);
 	setTopLeft("husbandry/silk_touch_nest", 8, 2);
 	setTopLeft("husbandry/tadpole_in_a_bucket", 9, 2);
-	setTopLeft("husbandry/plant_seed", 10.5, 2);
+	setTopLeft("husbandry/obtain_sniffer_egg", 10, 2);
+	setTopLeft("husbandry/plant_seed", 11.5, 2);
 	setTopLeft("husbandry/wax_on", 1, 3);
 	setTopLeft("husbandry/bred_all_animals", 2, 3);
 	setTopLeft("husbandry/allay_deliver_cake_to_note_block", 3, 3);
 	setTopLeft("husbandry/complete_catalogue", 5, 3);
 	setTopLeft("husbandry/tactical_fishing", 7, 3);
 	setTopLeft("husbandry/leash_all_frog_variants", 9, 3);
-	setTopLeft("husbandry/balanced_diet", 10, 3);
-	setTopLeft("husbandry/obtain_netherite_hoe", 11, 3);
+	setTopLeft("husbandry/feed_snifflet", 10, 3);
+	setTopLeft("husbandry/balanced_diet", 11, 3);
+	setTopLeft("husbandry/obtain_netherite_hoe", 12, 3);
 	setTopLeft("husbandry/wax_off", 1, 4);
 	setTopLeft("husbandry/axolotl_in_a_bucket", 7, 4);
 	setTopLeft("husbandry/froglights", 9, 4);
+	setTopLeft("husbandry/plant_any_sniffer_seed", 10, 4);
 	setTopLeft("husbandry/kill_axolotl_target", 7, 5);
 }
 
