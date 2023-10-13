@@ -11,20 +11,25 @@ function hideAllCategories() {
 }
 
 function worldUpdate(worldName) {
-	playerSel.options.length = 0;
-	let allOption = document.createElement("option");
-	allOption.text = "All";
-	allOption.value = "all";
-	playerSel.add(allOption);
-	for(const userId in data[worldName]) {
-		if(userId !== "all" && userIdToName[userId]) {
-			let option = document.createElement("option");
-			option.text = userIdToName[userId];
-			option.value = userId;
-			playerSel.add(option);
-		}
+	if (worldName === "") {
+		alert("No valid world selected.");
 	}
-	updateNodes(worldName, "all");
+	else {
+		playerSel.options.length = 0;
+		let allOption = document.createElement("option");
+		allOption.text = "All";
+		allOption.value = "all";
+		playerSel.add(allOption);
+		for(const userId in data[worldName]) {
+			if(userId !== "all" && userIdToName[userId]) {
+				let option = document.createElement("option");
+				option.text = userIdToName[userId];
+				option.value = userId;
+				playerSel.add(option);
+			}
+		}
+		updateNodes(worldName, "all");
+	}
 }
 
 function updateNodes(worldName, userId) {

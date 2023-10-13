@@ -147,7 +147,8 @@
 	</body>
 	<script>
 		(async() => {
-			await loadContent();
+			const worldFileName = (new URLSearchParams(window.location.search)).get("world");
+			await loadContent(worldFileName);
 			await loadUserIdToName();
 			await loadAdvancementNames();
 			setScaleSize();
