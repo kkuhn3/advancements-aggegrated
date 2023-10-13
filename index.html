@@ -147,14 +147,14 @@
 	</body>
 	<script>
 		(async() => {
-			const worldFileName = (new URLSearchParams(window.location.search)).get("world");
-			await loadContent(worldFileName);
+			const urlSearch = new URLSearchParams(window.location.search);
+			await loadContent(urlSearch.get("world"));
 			await loadUserIdToName();
 			await loadAdvancementNames();
 			setScaleSize();
 			addResizer();
 			addInfoDivs();
-			worldUpdate(worldSel.value);
+			worldUpdate(worldSel.value, urlSearch.get("isArchipelago"));
 			tabUpdate("minecraft");
 			addImages();
 			setScaleSize();
