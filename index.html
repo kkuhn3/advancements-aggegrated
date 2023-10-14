@@ -22,6 +22,7 @@
 				<option value="end">The End</option>
 				<option value="adventure">Adventure</option>
 				<option value="husbandry">Husbandry</option>
+				<option disabled value="archipelago">Archipelago</option>
 			</select>
 		</div>
 		<div class="category" id="minecraft">
@@ -144,6 +145,21 @@
 			<div class="node" id="husbandry/plant_any_sniffer_seed"></div>
 			<div class="node" id="husbandry/kill_axolotl_target"></div>
 		</div>
+		<div class="category" id="archipelago">
+			<div class="node" id="archipelago/root"></div>
+			<div class="node" id="archipelago/get_wood"></div>
+			<div class="node" id="archipelago/craft_sword"></div>
+			<div class="node" id="archipelago/get_pickaxe"></div>
+			<div class="node" id="archipelago/cow_tipper"></div>
+			<div class="node" id="archipelago/hot_topic"></div>
+			<div class="node" id="archipelago/bake_bread"></div>
+			<div class="node" id="archipelago/ride_minecart"></div>
+			<div class="node" id="archipelago/overpowered"></div>
+			<div class="node" id="archipelago/the_lie"></div>
+			<div class="node" id="archipelago/overkill"></div>
+			<div class="node" id="archipelago/obtain_bookshelf"></div>
+			<div class="node" id="archipelago/ride_pig"></div>
+		</div>
 	</body>
 	<script>
 		(async() => {
@@ -151,10 +167,13 @@
 			await loadContent(urlSearch.get("world"));
 			await loadUserIdToName();
 			await loadAdvancementNames();
+			if (urlSearch.get("isArchipelago")) {
+				tabSel[5].disabled = false;
+			}
 			setScaleSize();
 			addResizer();
 			addInfoDivs();
-			worldUpdate(worldSel.value, urlSearch.get("isArchipelago"));
+			worldUpdate(worldSel.value);
 			tabUpdate("minecraft");
 			addImages();
 			setScaleSize();

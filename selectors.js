@@ -10,7 +10,7 @@ function hideAllCategories() {
 	}
 }
 
-function worldUpdate(worldName, isArchipelago) {
+function worldUpdate(worldName) {
 	if (worldName === "") {
 		alert("No valid world selected.");
 	}
@@ -28,7 +28,8 @@ function worldUpdate(worldName, isArchipelago) {
 				playerSel.add(option);
 			}
 		}
-		updateNodes(worldName, "all", isArchipelago);
+		const urlSearch = new URLSearchParams(window.location.search);
+		updateNodes(worldName, "all", urlSearch.get("isArchipelago"));
 	}
 }
 

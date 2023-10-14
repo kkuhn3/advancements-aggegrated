@@ -908,5 +908,83 @@
     },
     "done": true
   },
+  "aprandomizer:archipelago/root": {
+    "criteria": {
+      "auto": "2023-10-10 19:19:45 -0400"
+    },
+    "done": true
+  },
+  "aprandomizer:archipelago/get_wood": {
+    "criteria": {
+      "get_logs": "2023-10-10 19:38:49 -0400"
+    },
+    "done": true
+  },
+  "aprandomizer:archipelago/craft_sword": {
+    "criteria": {
+      "get_sword": "2023-10-10 19:39:36 -0400"
+    },
+    "done": true
+  },
+  "aprandomizer:archipelago/get_pickaxe": {
+    "criteria": {
+      "get_pick": "2023-10-10 19:39:40 -0400"
+    },
+    "done": true
+  },
+  "aprandomizer:archipelago/cow_tipper": {
+    "criteria": {
+      "get_leather": "2023-10-10 19:44:59 -0400"
+    },
+    "done": true
+  },
+  "aprandomizer:archipelago/hot_topic": {
+    "criteria": {
+      "get_furnace": "2023-10-10 19:45:17 -0400"
+    },
+    "done": true
+  },
+  "aprandomizer:archipelago/bake_bread": {
+    "criteria": {
+      "get_bread": "2023-10-10 19:54:55 -0400"
+    },
+    "done": true
+  },
+  "aprandomizer:archipelago/ride_minecart": {
+    "criteria": {
+      "ride_1km": "2023-10-10 21:20:00 -0400"
+    },
+    "done": true
+  },
+  "aprandomizer:archipelago/overpowered": {
+    "criteria": {
+      "consumed_item": "2023-10-10 22:48:35 -0400"
+    },
+    "done": true
+  },
+  "aprandomizer:archipelago/the_lie": {
+    "criteria": {
+      "eat_cake": "2023-10-10 22:48:35 -0400"
+    },
+    "done": true
+  },
+  "aprandomizer:archipelago/overkill": {
+    "criteria": {
+      "impossible": "2023-10-10 22:48:35 -0400"
+    },
+    "done": true
+  },
+  "aprandomizer:archipelago/obtain_bookshelf": {
+    "criteria": {
+      "get_bookshelf": "2023-10-10 22:48:35 -0400"
+    },
+    "done": true
+  },
+  "aprandomizer:archipelago/ride_pig": {
+    "criteria": {
+      "impossible": "2023-10-10 22:48:35 -0400"
+    },
+    "done": true
+  },
   "DataVersion": 3465
 }

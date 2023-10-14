@@ -12,6 +12,7 @@ function setScaleSize() {
 	placeEnd();
 	placeAdventure();
 	placeHusbandry();
+	placeArchipelago();
 }
 
 function addResizer() {
@@ -144,6 +145,22 @@ function placeHusbandry() {
 	setTopLeft("husbandry/froglights", 9, 4);
 	setTopLeft("husbandry/plant_any_sniffer_seed", 10, 4);
 	setTopLeft("husbandry/kill_axolotl_target", 7, 5);
+}
+
+function placeArchipelago() {
+	setTopLeft("archipelago/root", 3.5, 1);
+	setTopLeft("archipelago/get_wood", 1.5, 2);
+	setTopLeft("archipelago/craft_sword", 2, 3);
+	setTopLeft("archipelago/get_pickaxe", 1, 3);
+	setTopLeft("archipelago/cow_tipper", 3.5, 2);
+	setTopLeft("archipelago/hot_topic", 1, 4);
+	setTopLeft("archipelago/bake_bread", 5.5, 2);
+	setTopLeft("archipelago/ride_minecart", 4.5, 2);
+	setTopLeft("archipelago/overpowered", 5, 3);
+	setTopLeft("archipelago/the_lie", 6, 3);
+	setTopLeft("archipelago/overkill", 2, 4);
+	setTopLeft("archipelago/obtain_bookshelf", 3, 3);
+	setTopLeft("archipelago/ride_pig", 4, 3);
 }
 
 function setTopLeft(eleId, t, l) {

@@ -112,5 +112,19 @@
  "husbandry/axolotl_in_a_bucket": { "name": "The Cutest Predator", "description": "Catch an axolotl in a bucket", "id": "husbandry/axolotl_in_a_bucket" },
  "husbandry/froglights": { "name": "With Our Powers Combined!", "description": "Have all Froglights in your inventory", "id": "husbandry/froglights" },
  "husbandry/plant_any_sniffer_seed": { "name": "Planting the Past", "description": "Plant any Sniffer seed", "id": "husbandry/plant_any_sniffer_seed" }, 
- "husbandry/kill_axolotl_target": { "name": "The Healing Power of Friendship!", "description": "Team up with an axolotl and win a fight", "id": "husbandry/kill_axolotl_target" }
+ "husbandry/kill_axolotl_target": { "name": "The Healing Power of Friendship!", "description": "Team up with an axolotl and win a fight", "id": "husbandry/kill_axolotl_target" },
+
+ "archipelago/root": { "name": "Archipelago", "description": "Welcome to the AP Randomizer", "id": "archipelago/root" },
+ "archipelago/get_wood": { "name": "Getting Wood", "description": "Attack a tree until a block of wood pops out", "id": "archipelago/get_wood" },
+ "archipelago/craft_sword": { "name": "Time to Strike!", "description": "Use planks and sticks to make a sword", "id": "archipelago/craft_sword" },
+ "archipelago/get_pickaxe": { "name": "Time to Mine!", "description": "Use planks and sticks to make a pickaxe", "id": "archipelago/get_pickaxe" },
+ "archipelago/cow_tipper": { "name": "Cow Tipper", "description": "Harvest some leather", "id": "archipelago/cow_tipper" },
+ "archipelago/hot_topic": { "name": "Hot Topic", "description": "Construct a furnace out of eight cobblestone blocks.", "id": "archipelago/hot_topic" },
+ "archipelago/bake_bread": { "name": "Bake Bread", "description": "Turn wheat into bread", "id": "archipelago/bake_bread" },
+ "archipelago/ride_minecart": { "name": "On A Rail", "description": "Reach 1km by minecart in your statistics.", "id": "archipelago/ride_minecart" },
+ "archipelago/overpowered": { "name": "Overpowered", "description": "Eat a Notch apple", "id": "archipelago/overpowered" },
+ "archipelago/the_lie": { "name": "The Lie", "description": "Bake cake using wheat, sugar, milk, and eggs! Enjoy!", "id": "archipelago/the_lie" },
+ "archipelago/overkill": { "name": "Overkill", "description": "Deal nine hearts of damage in a single hit", "id": "archipelago/overkill" },
+ "archipelago/obtain_bookshelf": { "name": "Librarian", "description": "Build some bookshelves to improve your enchantment table", "id": "archipelago/obtain_bookshelf" },
+ "archipelago/ride_pig": { "name": "When Pigs Fly", "description": "Fly a pig off a cliff", "id": "archipelago/ride_pig" }
 }

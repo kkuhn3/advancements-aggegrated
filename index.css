@@ -68,6 +68,11 @@ select {
 	background-repeat: repeat;
 }
 
+#archipelago {
+	background-image: url("./images/backgrounds/archipelago.png");
+	background-repeat: repeat;
+}
+
 img {
 	width: 80%;
 	height: 80%;
