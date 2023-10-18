@@ -136,5 +136,6 @@ function updateNodes(worldName, userId, isArchipelago) {
 }
 
 function playerUpdate(userId) {
-	updateNodes(worldSel.value, userId);
+	const urlSearch = new URLSearchParams(window.location.search);
+	updateNodes(worldSel.value, userId, urlSearch.get("isArchipelago"));
 }
