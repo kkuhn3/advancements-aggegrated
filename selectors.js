@@ -70,7 +70,33 @@ const archExcludedNodes = [
 	"husbandry/obtain_sniffer_egg",
 	"husbandry/feed_snifflet",
 	"husbandry/plant_any_sniffer_seed"
-]
+];
+
+const brewingLogicalNodes = [
+	// can_brew_potions
+	"nether/all_potions",
+	"nether/brew_potion",
+	"nether/all_effects",
+	"story/cure_zombie_villager",
+	"husbandry/obtain_netherite_hoe",
+	"nether/obtain_ancient_debris",
+	"nether/netherite_armor",
+	"archipelago/overkill",
+	// can_kill_wither
+	"nether/create_beacon",
+	"adventure/kill_all_mobs",
+	"nether/create_full_beacon",
+	"nether/summon_wither",
+	// can_kill_ender_dragon
+	"end/kill_dragon",
+	"end/dragon_egg",
+	"end/respawn_dragon",
+	"adventure/kill_all_mobs",
+	// enter_stronghold
+	"story/follow_ender_eye",
+	"end/root",
+	"end/enter_end_gateway"
+];
 
 function updateNodes(worldName, userId, isArchipelago) {
 	const nodes = document.getElementsByClassName("node");
@@ -86,6 +112,9 @@ function updateNodes(worldName, userId, isArchipelago) {
 		}
 		else if(data[worldName][userId][node.id].done === 0) {
 			node.style.backgroundColor = "red";
+			if (isArchipelago && brewingLogicalNodes.includes(node.id)) {
+				node.style.backgroundColor = "blue";
+			}
 		}
 		else {
 			let doneCount = 0;
@@ -106,6 +135,9 @@ function updateNodes(worldName, userId, isArchipelago) {
 			}
 			else {
 				node.style.backgroundColor = "red";
+				if (isArchipelago && brewingLogicalNodes.includes(node.id)) {
+					node.style.backgroundColor = "blue";
+				}
 			}
 		}
 		
