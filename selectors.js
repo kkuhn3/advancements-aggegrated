@@ -94,6 +94,7 @@ const brewingLogicalNodes = [
 	"adventure/kill_all_mobs",
 	// enter_stronghold
 	"story/follow_ender_eye",
+	"story/enter_the_end",
 	"end/root",
 	"end/enter_end_gateway"
 ];
