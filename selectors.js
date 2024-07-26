@@ -28,8 +28,7 @@ function worldUpdate(worldName) {
 				playerSel.add(option);
 			}
 		}
-		const urlSearch = new URLSearchParams(window.location.search);
-		updateNodes(worldName, "all", urlSearch.get("isArchipelago"));
+		updateNodes(worldName, "all");
 	}
 }
 
@@ -69,7 +68,21 @@ const archExcludedNodes = [
 	"adventure/craft_decorated_pot_using_only_sherds",
 	"husbandry/obtain_sniffer_egg",
 	"husbandry/feed_snifflet",
-	"husbandry/plant_any_sniffer_seed"
+	"husbandry/plant_any_sniffer_seed",
+	// new as of 1.20.5, not yet in archipelago logic
+	"husbandry/repair_wolf_armor",
+	"husbandry/whole_pack",
+	"husbandry/remove_wolf_armor",
+	"adventure/brush_armadillo",
+	// new as of 1.21, not yet in archipelago logic
+	"adventure/minecraft_trials_edition",
+	"adventure/crafters_crafting_crafters",
+	"adventure/lighten_up",
+	"adventure/who_needs_rockets",
+	"adventure/under_lock_and_key",
+	"adventure/revaulting",
+	"adventure/blowback",
+	"adventure/overoverkill"
 ];
 
 const brewingLogicalNodes = [
@@ -99,7 +112,9 @@ const brewingLogicalNodes = [
 	"end/enter_end_gateway"
 ];
 
-function updateNodes(worldName, userId, isArchipelago) {
+function updateNodes(worldName, userId) {
+	const urlSearch = new URLSearchParams(window.location.search);
+	const isArchipelago = urlSearch.get("a");
 	const nodes = document.getElementsByClassName("node");
 	for(node of nodes) {
 		if(isArchipelago && archExcludedNodes.includes(node.id)) {
@@ -169,6 +184,5 @@ function updateNodes(worldName, userId, isArchipelago) {
 }
 
 function playerUpdate(userId) {
-	const urlSearch = new URLSearchParams(window.location.search);
-	updateNodes(worldSel.value, userId, urlSearch.get("isArchipelago"));
+	updateNodes(worldSel.value, userId);
 }

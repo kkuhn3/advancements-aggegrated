@@ -116,6 +116,15 @@
 			<div class="node" id="adventure/very_very_frightening"></div>
 			<div class="node" id="adventure/sniper_duel"></div>
 			<div class="node" id="adventure/bullseye"></div>
+			<div class="node" id="adventure/brush_armadillo"></div>
+			<div class="node" id="adventure/minecraft_trials_edition"></div>
+			<div class="node" id="adventure/crafters_crafting_crafters"></div>
+			<div class="node" id="adventure/lighten_up"></div>
+			<div class="node" id="adventure/who_needs_rockets"></div>
+			<div class="node" id="adventure/under_lock_and_key"></div>
+			<div class="node" id="adventure/revaulting"></div>
+			<div class="node" id="adventure/blowback"></div>
+			<div class="node" id="adventure/overoverkill"></div>
 		</div>
 		<div class="category" id="husbandry">
 			<div class="node" id="husbandry/root"></div>
@@ -144,6 +153,9 @@
 			<div class="node" id="husbandry/froglights"></div>
 			<div class="node" id="husbandry/plant_any_sniffer_seed"></div>
 			<div class="node" id="husbandry/kill_axolotl_target"></div>
+			<div class="node" id="husbandry/repair_wolf_armor"></div>
+			<div class="node" id="husbandry/whole_pack"></div>
+			<div class="node" id="husbandry/remove_wolf_armor"></div>
 		</div>
 		<div class="category" id="archipelago">
 			<div class="node" id="archipelago/root"></div>
@@ -164,10 +176,10 @@
 	<script>
 		(async() => {
 			const urlSearch = new URLSearchParams(window.location.search);
-			await loadContent(urlSearch.get("world"));
+			await loadContent(urlSearch.get("w"));
 			await loadUserIdToName();
 			await loadAdvancementNames();
-			if (urlSearch.get("isArchipelago")) {
+			if (urlSearch.get("a")) {
 				tabSel[5].disabled = false;
 			}
 			setScaleSize();
