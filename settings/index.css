@@ -1,0 +1,27 @@
+body { 
+  font-family: sans-serif; 
+}
+
+html {
+  background-color: #d3dfeb;
+}
+  
+label { 
+  width: 240px; 
+  display: inline-block; 
+}
+
+div { 
+  background-color: #d3dfeb;
+  padding: 5px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.header {
+  width: 420px;
+  text-align: center;
+  font-weight: bold;
+}

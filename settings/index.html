@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Advancements Aggregated Settings</title>
+	<script src="index.js"></script>
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+	
+	<div class="header">
+		Settings
+	</div>
+	<div>
+		<label>World</label>
+		<select id="worldSel">
+			<option value="" selected>--- All ---</option>
+		</select>
+	</div>
+	<div>
+		<label>As Archipelago</label>
+		<select id="isArch">
+			<option value="true">True</option>
+			<option value="" selected>False</option>
+		</select>
+	</div>
+	
+	<div class="header">
+		Ready?
+	</div>
+	<div>
+		<label>Let's Go</label>
+		<button type="button" onclick="launch()">Launch</button>
+	</div>
+
+</body>
+<script>
+	(async() => {
+		await loadWorlds();
+	})();
+</script>
+</html>
