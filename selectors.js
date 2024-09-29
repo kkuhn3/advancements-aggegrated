@@ -112,24 +112,30 @@ const brewingLogicalNodes = [
 	"end/enter_end_gateway"
 ];
 
+const grey = "#808080";
+const green = "#80ff80"
+const yellow = "#ffff80";
+const red = "#ff8080";
+const blue = "#8080ff";
+
 function updateNodes(worldName, userId) {
 	const urlSearch = new URLSearchParams(window.location.search);
 	const isArchipelago = urlSearch.get("a");
 	const nodes = document.getElementsByClassName("node");
 	for(node of nodes) {
 		if(isArchipelago && archExcludedNodes.includes(node.id)) {
-			node.style.backgroundColor = "grey";
+			node.style.backgroundColor = grey;
 		}
 		else if(data[worldName][userId][node.id].done === 1) {
-			node.style.backgroundColor = "green";
+			node.style.backgroundColor = green;
 		}
 		else if(data[worldName][userId][node.id].done > 0) {
-			node.style.backgroundColor = "yellow";
+			node.style.backgroundColor = yellow;
 		}
 		else if(data[worldName][userId][node.id].done === 0) {
-			node.style.backgroundColor = "red";
+			node.style.backgroundColor = red;
 			if (isArchipelago && brewingLogicalNodes.includes(node.id)) {
-				node.style.backgroundColor = "blue";
+				node.style.backgroundColor = blue;
 			}
 		}
 		else {
@@ -144,15 +150,15 @@ function updateNodes(worldName, userId) {
 				}
 			}
 			if(totalCount === doneCount) {
-				node.style.backgroundColor = "green";
+				node.style.backgroundColor = green;
 			}
 			else if(doneCount > 0) {
-				node.style.backgroundColor = "yellow";
+				node.style.backgroundColor = yellow;
 			}
 			else {
-				node.style.backgroundColor = "red";
+				node.style.backgroundColor = red;
 				if (isArchipelago && brewingLogicalNodes.includes(node.id)) {
-					node.style.backgroundColor = "blue";
+					node.style.backgroundColor = blue;
 				}
 			}
 		}
@@ -164,12 +170,12 @@ function updateNodes(worldName, userId) {
 			"<span><I>" + advancement.description + "<I></span><br>" +
 			"<br>";
 		for(const requirement in data[worldName][userId][node.id]) {
-			let color = "red";
+			let color = red;
 			if(data[worldName][userId][node.id][requirement] === 1) {
-				color = "green";
+				color = green;
 			}
 			else if(data[worldName][userId][node.id][requirement] > 0) {
-				color = "yellow";
+				color = yellow;
 			}
 			if(userId === "all") {
 				if(userIdToName[requirement]) {
