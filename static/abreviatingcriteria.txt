@@ -1,0 +1,1 @@
+  "minecraft:recipes.*\n.*\n.*\n.*},\n.*done.*\n.*\n
