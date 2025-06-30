@@ -27,7 +27,6 @@
  "nether/ride_strider": { "name": "This Boat Has Legs", "description": "Ride a Strider with a Warped Fungus on a Stick", "id": "nether/ride_strider" },
  "nether/uneasy_alliance": { "name": "Uneasy Alliance", "description": "Rescue a Ghast from the nether, bring it safely home to the Overworld... and then kill it", "id": "nether/uneasy_alliance" },
  "nether/loot_bastion": { "name": "War Pigs", "description": "Loot a chest in a Bastion Remnant", "id": "nether/loot_bastion" },
- "nether/use_lodestone": { "name": "Country Lode, Take Me Home", "description": "Use a compass on Lodestone", "id": "nether/use_lodestone" },
  "nether/netherite_armor": { "name": "Cover Me in Debris", "description": "Get a full suit of netherite armor", "id": "nether/netherite_armor" },
  "nether/get_wither_skull": { "name": "Spooky Scary Skeleton", "description": "Obtain a Wither Skeleton's skull", "id": "nether/get_wither_skull" },
  "nether/obtain_blaze_rod": { "name": "Into Fire", "description": "Relieve a Blaze of its rod", "id": "nether/obtain_blaze_rod" },
@@ -52,7 +51,9 @@
  "end/levitate": { "name": "Great View From Up Here", "description": "Levitate up 50 blocks from the attacks of a Shulker", "id": "end/levitate" }, 
 
  "adventure/root": { "name": "Adventure", "description": "Adventure, exploration, and combat", "id": "adventure/root" }, 
+ "adventure/heart_transplanter": { "name": "Heart Transplanter", "description": "Place a Creaking Heart with the correct alignment between two Pale Oak Log blocks", "id": "adventure/heart_transplanter" }, 
  "adventure/voluntary_exile": { "name": "Voluntary Exile", "description": "Kill a raid captain. Maybe consider staying away from villages for the time being...", "id": "adventure/voluntary_exile" }, 
+ "adventure/use_lodestone": { "name": "Country Lode, Take Me Home", "description": "Use a compass on Lodestone", "id": "adventure/use_lodestone" },
  "adventure/spyglass_at_parrot": { "name": "Is It a Bird?", "description": "Look at a parrot through a spyglass", "id": "adventure/spyglass_at_parrot" }, 
  "adventure/kill_a_mob": { "name": "Monster Hunter", "description": "Kill any hostile monster", "id": "adventure/kill_a_mob" }, 
  "adventure/read_power_of_chiseled_bookshelf": { "name": "The Power of Books", "description": "Read the power signal of a Chiseled Bookshelf using a Comparator", "id": "adventure/read_power_of_chiseled_bookshelf" }, 
@@ -97,6 +98,7 @@
  "adventure/overoverkill": { "name": "Over-Overkill", "description": "Deal 50 hearts of damage in a single hit using the Mace", "id": "adventure/overoverkill" }, 
 
  "husbandry/root": { "name": "Husbandry", "description": "The world is full of friends and food", "id": "husbandry/root" }, 
+ "husbandry/place_dried_ghast_in_water": { "name": "Stay Hydrated!", "description": "Place a Dried Ghast block into water", "id": "husbandry/place_dried_ghast_in_water" }, 
  "husbandry/safely_harvest_honey": { "name": "Bee Our Guest", "description": "Use a Campfire to collect Honey from a Beehive using a Bottle without aggravating the bees", "id": "husbandry/safely_harvest_honey" }, 
  "husbandry/breed_an_animal": { "name": "The Parrots and the Bats", "description": "Breed two animals together", "id": "husbandry/breed_an_animal" },
  "husbandry/allay_deliver_item_to_player": { "name": "You've Got a Friend in Me", "description": "Have an Allay deliver items to you", "id": "husbandry/allay_deliver_item_to_player" },

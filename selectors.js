@@ -82,7 +82,9 @@ const archExcludedNodes = [
 	"adventure/under_lock_and_key",
 	"adventure/revaulting",
 	"adventure/blowback",
-	"adventure/overoverkill"
+	"adventure/overoverkill",
+	"adventure/heart_transplanter",
+	"husbandry/place_dried_ghast_in_water"
 ];
 
 const brewingLogicalNodes = [

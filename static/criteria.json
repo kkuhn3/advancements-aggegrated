@@ -24,6 +24,12 @@
     },
     "done": true
   },
+  "minecraft:adventure/use_lodestone": {
+    "criteria": {
+      "use_lodestone": ""
+    },
+    "done": true
+  },
   "minecraft:husbandry/repair_wolf_armor": {
     "criteria": {
       "repair_wolf_armor": ""
@@ -61,6 +67,12 @@
   "minecraft:story/lava_bucket": {
     "criteria": {
       "lava_bucket": ""
+    },
+    "done": true
+  },
+  "minecraft:husbandry/place_dried_ghast_in_water": {
+    "criteria": {
+      "place_dried_ghast_in_water": ""
     },
     "done": true
   },
@@ -541,6 +553,14 @@
     },
     "done": true
   },
+  "minecraft:adventure/heart_transplanter": {
+    "criteria": {
+      "place_pale_oak_log": "",
+      "place_creaking_heart_dormant": "",
+      "place_creaking_heart_awake": ""
+    },
+    "done": true
+  },
   "minecraft:story/enchant_item": {
     "criteria": {
       "enchanted_item": ""
@@ -697,7 +717,7 @@
       "minecraft:deep_dark": "",
       "minecraft:meadow": "",
       "minecraft:windswept_gravelly_hills": "",
-      "minecraft:savanna": "2025-02-08 15:41:26 -0500",
+      "minecraft:savanna": "",
       "minecraft:plains": "",
       "minecraft:pale_garden": ""
     },
@@ -848,12 +868,6 @@
   "minecraft:husbandry/root": {
     "criteria": {
       "consumed_item": ""
-    },
-    "done": true
-  },
-  "minecraft:nether/use_lodestone": {
-    "criteria": {
-      "use_lodestone": ""
     },
     "done": true
   },
@@ -1078,5 +1092,5 @@
     "done": true
   },
   
-  "DataVersion": 4189
+  "DataVersion": 4438
 }
