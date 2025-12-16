@@ -75,6 +75,7 @@
  "adventure/totem_of_undying": { "name": "Postmortal", "description": "Use a Totem of Undying to cheat death", "id": "adventure/totem_of_undying" }, 
  "adventure/summon_iron_golem": { "name": "Hired Help", "description": "Summon an Iron Golem to help defend a village", "id": "adventure/summon_iron_golem" },
  "adventure/trade_at_world_height": { "name": "Star Trader", "description": "Trade with a villager at the build height limit", "id": "adventure/trade_at_world_height" },
+ "adventure/spear_many_mobs": { "name": "Mob Kabob", "description": "Hit five mobs in the same Charge attack using the Spear.", "id": "adventure/spear_many_mobs" },
  "adventure/trim_with_all_exclusive_armor_patterns": { "name": "Smithing with Style", "description": "Apply these smithing templates at least once: Spire, Snout, Rib, Ward, Silence, Vex, Tide, Wayfinder", "id": "adventure/trim_with_all_exclusive_armor_patterns" },
  "adventure/two_birds_one_arrow": { "name": "Two Birds, One Arrow", "description": "Kill two Phantoms with a piercing arrow", "id": "adventure/two_birds_one_arrow" }, 
  "adventure/whos_the_pillager_now": { "name": "Who's the Pillager Now?", "description": "Give a Pillager a taste of their own medicine", "id": "adventure/whos_the_pillager_now" }, 

@@ -95,12 +95,12 @@ function placeAdventure() {
 	setTopLeft("adventure/honey_block_slide", 15, 2);
 	setTopLeft("adventure/kill_a_mob", 16.25, 2);
 	setTopLeft("adventure/avoid_vibration", 18.5, 2);
-	setTopLeft("adventure/ol_betsy", 20.5, 2);
-	setTopLeft("adventure/trim_with_any_armor_pattern", 22.5, 2);
-	setTopLeft("adventure/lightning_rod_with_villager_no_fire", 23.5, 2);
-	setTopLeft("adventure/salvage_sherd", 24.5, 2);
-	setTopLeft("adventure/voluntary_exile", 25.5, 2);
-	setTopLeft("adventure/read_power_of_chiseled_bookshelf", 26.5, 2);
+	setTopLeft("adventure/ol_betsy", 21.5, 2);
+	setTopLeft("adventure/trim_with_any_armor_pattern", 23.5, 2);
+	setTopLeft("adventure/lightning_rod_with_villager_no_fire", 24.5, 2);
+	setTopLeft("adventure/salvage_sherd", 25.5, 2);
+	setTopLeft("adventure/voluntary_exile", 26.5, 2);
+	setTopLeft("adventure/read_power_of_chiseled_bookshelf", 27.5, 2);
 	
 	setTopLeft("adventure/spyglass_at_ghast", 3, 3);
 	setTopLeft("adventure/play_jukebox_in_meadows", 4, 3);
@@ -118,12 +118,13 @@ function placeAdventure() {
 	setTopLeft("adventure/totem_of_undying", 16, 3);
 	setTopLeft("adventure/throw_trident", 17, 3);
 	setTopLeft("adventure/shoot_arrow", 18.5, 3);
-	setTopLeft("adventure/whos_the_pillager_now", 19.5, 3);
-	setTopLeft("adventure/arbalistic", 20.5, 3);
-	setTopLeft("adventure/two_birds_one_arrow", 21.5, 3);
-	setTopLeft("adventure/trim_with_all_exclusive_armor_patterns", 22.5, 3);
-	setTopLeft("adventure/craft_decorated_pot_using_only_sherds", 24.5, 3);
-	setTopLeft("adventure/hero_of_the_village", 25.5, 3);
+	setTopLeft("adventure/spear_many_mobs", 19.5, 3);
+	setTopLeft("adventure/whos_the_pillager_now", 20.5, 3);
+	setTopLeft("adventure/arbalistic", 21.5, 3);
+	setTopLeft("adventure/two_birds_one_arrow", 22.5, 3);
+	setTopLeft("adventure/trim_with_all_exclusive_armor_patterns", 23.5, 3);
+	setTopLeft("adventure/craft_decorated_pot_using_only_sherds", 25.5, 3);
+	setTopLeft("adventure/hero_of_the_village", 26.5, 3);
 	
 	setTopLeft("adventure/spyglass_at_dragon", 3, 4);
 	setTopLeft("adventure/revaulting", 12, 4);
