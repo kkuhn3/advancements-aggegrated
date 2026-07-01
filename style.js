@@ -147,6 +147,7 @@ function placeHusbandry() {
 	setTopLeft("husbandry/silk_touch_nest", 13, 2);
 	setTopLeft("husbandry/plant_seed", 14, 2);
 	setTopLeft("husbandry/place_dried_ghast_in_water", 15, 2);
+	setTopLeft("husbandry/uh_oh", 16, 2);
 	
 	setTopLeft("husbandry/tactical_fishing", 2, 3);
 	setTopLeft("husbandry/whole_pack", 3, 3);

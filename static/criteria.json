@@ -888,6 +888,7 @@
       "minecraft:flower_forest": "",
       "minecraft:frozen_peaks": "",
       "minecraft:old_growth_birch_forest": "",
+      "minecraft:sulfur_caves": "",
       "minecraft:deep_dark": "",
       "minecraft:meadow": "",
       "minecraft:windswept_gravelly_hills": "",
@@ -1021,6 +1022,13 @@
     },
     "done": true
   },
+  "minecraft:husbandry/uh_oh": {
+    "criteria": {
+      "give_tnt_directly": "",
+      "pick_up_dropped_tnt": ""
+    },
+    "done": true
+  },
   "minecraft:adventure/who_needs_rockets": {
     "criteria": {
       "who_needs_rockets": ""
@@ -1106,6 +1114,6 @@
     },
     "done": true
   },
-
-  "DataVersion": 4671
+  
+  "DataVersion": 4903
 }

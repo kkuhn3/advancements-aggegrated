@@ -128,6 +128,7 @@
  "husbandry/repair_wolf_armor": { "name": "Good as New", "description": "Repair a damaged Wolf Armor using Armadillo Scutes", "id": "husbandry/repair_wolf_armor" },
  "husbandry/whole_pack": { "name": "The Whole Pack", "description": "Tame one of each Wolf variant", "id": "husbandry/whole_pack" },
  "husbandry/remove_wolf_armor": { "name": "Shear Brilliance", "description": "Remove Wolf Armor from a Wolf using Shears", "id": "husbandry/remove_wolf_armor" },
+ "husbandry/uh_oh": { "name": "Uh Oh", "description": "Have a Sulfur Cube absorb a TNT block", "id": "husbandry/uh_oh" },
 
  "archipelago/root": { "name": "Archipelago", "description": "Welcome to the AP Randomizer", "id": "archipelago/root" },
  "archipelago/get_wood": { "name": "Getting Wood", "description": "Attack a tree until a block of wood pops out", "id": "archipelago/get_wood" },
